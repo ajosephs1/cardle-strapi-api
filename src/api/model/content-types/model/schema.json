@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "models",
+  "info": {
+    "singularName": "model",
+    "pluralName": "models",
+    "displayName": "Model",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "make": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::make.make",
+      "inversedBy": "models"
+    }
+  }
+}
