@@ -20,18 +20,7 @@ module.exports = [
       },
     },
   },
-  {
-    name: 'strapi::cors',
-    config: {
-      enabled: true,
-      headers: '*',
-      origin: 'http://localhost:3000', 
-      expose: ['WWW-Authenticate', 'Server-Authorization'],
-      maxAge: 31536000,
-      credentials: true,
-      methods: 'GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD',
-    }
-  },
+  'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
