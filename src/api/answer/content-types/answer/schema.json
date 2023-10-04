@@ -77,6 +77,13 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "answerYear": {
+      "type": "string",
+      "regex": "\\b\\d{4}\\b",
+      "required": true,
+      "minLength": 4,
+      "maxLength": 4
     }
   }
 }
