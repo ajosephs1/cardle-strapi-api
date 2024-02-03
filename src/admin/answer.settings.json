@@ -1,0 +1,29 @@
+{
+    "components": {
+      "answers": {
+        "fields": [
+          {
+            "name": "make",
+            "label": "Make",
+            "type": "relation",
+            "relationType": "toOne",
+            "collection": "make",
+            "targetModel": "make"
+          },
+          {
+            "name": "model",
+            "label": "Model",
+            "type": "relation",
+            "relationType": "toOne",
+            "collection": "model",
+            "targetModel": "model",
+            "condition": {
+              "make": "make" ,
+              "operator": "==="
+            }
+          }
+        ]
+      }
+    }
+  }
+  
