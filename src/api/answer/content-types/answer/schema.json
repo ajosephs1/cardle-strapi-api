@@ -23,7 +23,11 @@
     "model": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::model.model"
+      "target": "api::model.model",
+      "condition": {
+        "attribute": "make",
+        "operator": "==="
+      }
     },
     "year": {
       "type": "relation",
@@ -84,6 +88,9 @@
       "required": true,
       "minLength": 4,
       "maxLength": 4
+    },
+    "photoCredit": {
+      "type": "string"
     }
   }
 }
