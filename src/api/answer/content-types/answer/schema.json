@@ -97,12 +97,12 @@
       "required": true,
       "min": 0,
       "default": 0,
-      "max": 900
+      "max": 1800
     },
     "yCoordinate": {
       "type": "integer",
       "required": true,
-      "max": 600,
+      "max": 1200,
       "min": 0,
       "default": 0
     }

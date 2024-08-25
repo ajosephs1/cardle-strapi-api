@@ -827,7 +827,7 @@ export interface ApiAnswerAnswer extends Schema.CollectionType {
       Attribute.SetMinMax<
         {
           min: 0;
-          max: 900;
+          max: 1800;
         },
         number
       > &
@@ -837,7 +837,7 @@ export interface ApiAnswerAnswer extends Schema.CollectionType {
       Attribute.SetMinMax<
         {
           min: 0;
-          max: 600;
+          max: 1200;
         },
         number
       > &
