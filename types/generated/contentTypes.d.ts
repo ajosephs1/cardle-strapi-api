@@ -810,11 +810,11 @@ export interface ApiAnswerAnswer extends Schema.CollectionType {
       'api::year.year'
     >;
     imageFull: Attribute.Media & Attribute.Required;
-    imageOne: Attribute.Media & Attribute.Required;
-    imageTwo: Attribute.Media & Attribute.Required;
-    imageThree: Attribute.Media & Attribute.Required;
-    imageFour: Attribute.Media & Attribute.Required;
-    imageFive: Attribute.Media & Attribute.Required;
+    imageOne: Attribute.Media;
+    imageTwo: Attribute.Media;
+    imageThree: Attribute.Media;
+    imageFour: Attribute.Media;
+    imageFive: Attribute.Media;
     answerYear: Attribute.String &
       Attribute.Required &
       Attribute.SetMinMaxLength<{
@@ -822,6 +822,26 @@ export interface ApiAnswerAnswer extends Schema.CollectionType {
         maxLength: 4;
       }>;
     photoCredit: Attribute.String;
+    xCoordinate: Attribute.Integer &
+      Attribute.Required &
+      Attribute.SetMinMax<
+        {
+          min: 0;
+          max: 1800;
+        },
+        number
+      > &
+      Attribute.DefaultTo<0>;
+    yCoordinate: Attribute.Integer &
+      Attribute.Required &
+      Attribute.SetMinMax<
+        {
+          min: 0;
+          max: 1200;
+        },
+        number
+      > &
+      Attribute.DefaultTo<0>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
